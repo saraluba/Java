@@ -1,5 +1,4 @@
 //Sara Luba
-//new comment
 
 public class WordSplit {
     public static void main(String[] args) {

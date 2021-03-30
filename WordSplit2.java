@@ -1,3 +1,5 @@
+//Sara Luba
+
 public class WordSplit2 {
     public static void main(String[] args) {
         String word = args[0];
