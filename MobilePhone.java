@@ -4,12 +4,11 @@ public class MobilePhone {
     private int batteryAmount;
     private int freeMemory;
 
-    public MobilePhone(String brand, int batteryCapacity, int memory){
+    public MobilePhone(String brand, int batteryCapacity, int freeMemory){
         this.brand = brand;
         this.batteryCapacity = batteryCapacity;
         this.batteryAmount = batteryCapacity;
-        this.memory = memory;
-        this.freeMemory = memory;
+        this.freeMemory = freeMemory;
     }
 
     public void charge(){
