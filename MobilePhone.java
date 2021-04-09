@@ -1,9 +1,7 @@
 public class MobilePhone {
     private String brand;
-    private String model;
     private int batteryCapacity;
     private int batteryAmount;
-    private int memory;
     private int freeMemory;
 
     public MobilePhone(String brand, int batteryCapacity, int memory){
@@ -20,7 +18,7 @@ public class MobilePhone {
     }
 
     public void installAplication(String applicationName, int memory1){
-        if(batteryAmount > 0 && memory>memory1) {
+        if(batteryAmount > 0) {
             if (freeMemory - memory1 > 0) {
                 freeMemory = freeMemory - memory1;
                 System.out.printf("Application %s has been installed on %s. Remain memory: %d MB %n", applicationName, brand, freeMemory);
