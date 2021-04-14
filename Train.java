@@ -6,6 +6,11 @@ public class Train extends PublicTransport{
     }
 
     @Override
+    protected void sound() {
+        System.out.println("Beep");
+    }
+
+    @Override
     protected void go() {
         System.out.printf("Train %s is going%n", name);
     }
