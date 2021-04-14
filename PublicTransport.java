@@ -1,16 +1,15 @@
 package Transport;
 
-public abstract class PublicTransport{
-    protected String name;
+public abstract class PublicTransport extends Transport{
     protected int maxPassengers;
     protected int seats;
-    protected abstract void go();
 
-    public PublicTransport(String name, int maxPassengers){
-        this.name = name;
+    public PublicTransport(String name, int maxPassengers) {
+        super(name);
         this.maxPassengers = maxPassengers;
         this.seats = maxPassengers;
     }
+
 
     public int getMaxPassengers(){
         return maxPassengers;
