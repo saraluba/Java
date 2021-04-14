@@ -6,6 +6,11 @@ public class Bus extends PublicTransport{
     }
 
     @Override
+    protected void sound() {
+        System.out.println("Beep");
+    }
+
+    @Override
     protected void go() {
         System.out.printf("Bus %s is going%n", name);
     }
