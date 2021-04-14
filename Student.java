@@ -1,13 +1,13 @@
 import java.time.LocalDate;
 
 public class Student extends Person {
-    private String Faculty;
-    private int GraduateYear;
+    private String faculty;
+    private int graduateYear;
 
-    public Student(String FirstName, String LastName, LocalDate BirthDate, String Faculty, int GraduateYear) {
+    public Student(String FirstName, String LastName, LocalDate BirthDate, String faculty, int graduateYear) {
         super(FirstName, LastName, BirthDate);
-        this.Faculty = Faculty;
-        this.GraduateYear = GraduateYear;
+        this.faculty = faculty;
+        this.graduateYear = graduateYear;
     }
 
     @Override
@@ -40,19 +40,19 @@ public class Student extends Person {
         super.setBirthDate(date);
     }
 
-    public void setFaculty(String f){
-        Faculty = f;
+    public void setfaculty(String f){
+        faculty = f;
     }
 
-    public void setGraduateYear(int graduate){
-        GraduateYear = graduate;
+    public void setgraduateYear(int graduate){
+        graduateYear = graduate;
     }
 
-    public String getFaculty(){
-        return Faculty;
+    public String getfaculty(){
+        return faculty;
     }
 
-    public int getGraduateYear(){
-        return GraduateYear;
+    public int getgraduateYear(){
+        return graduateYear;
     }
 }
