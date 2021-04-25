@@ -7,7 +7,6 @@ import bank.internal.DepositAccount;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.LinkedList;
 
 public class BankApplication {
     //TODO: create banks, create accounts in banks, register banks in NB
