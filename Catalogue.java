@@ -3,10 +3,10 @@ package Zad2004;
 import java.util.HashMap;
 
 public class Catalogue {
-    HashMap<Integer, String> catalogue = new HashMap<>();
+    HashMap<Integer, Part> catalogue = new HashMap<>();
 
-    public void putToCatalogue(Parts part){
-        catalogue.put(part.partNumber, part.name +" "+ part.brand);
+    public void putToCatalogue(Part part){
+        catalogue.put(part.partNumber, part);
     }
 
     public void printPart(int number){
@@ -16,4 +16,3 @@ public class Catalogue {
             System.out.printf("There is no part with number %d%n", number);
         }
     }
-}
