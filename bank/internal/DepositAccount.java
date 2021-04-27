@@ -6,14 +6,35 @@ public class DepositAccount extends Account{
 
     public DepositAccount(String accountNumber) {
         super(accountNumber);
-        if(super.getBalance().compareTo(BigDecimal.valueOf(0)) == -1){
+    }
+
+    @Override
+    void settingPercents(double per) {
+        super.settingPercents(per);
+    }
+
+    @Override
+    void withDraw(BigDecimal amount) {
+        if(super.getBalance().compareTo(amount) == -1){
             throw new IllegalArgumentException("Balance can not be a negative number!");
+        } else{
+            super.withDraw(amount);
         }
     }
 
     @Override
     void topUp(BigDecimal amount) {
         super.topUp(amount);
+    }
+
+    @Override
+    public BigDecimal getBalance() {
+        return super.getBalance();
+    }
+
+    @Override
+    public String getAccountNumber() {
+        return super.getAccountNumber();
     }
 
     @Override
