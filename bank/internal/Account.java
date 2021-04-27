@@ -24,11 +24,7 @@ abstract class Account {
     }
 
     void withDraw(BigDecimal amount) {
-        if(balance.compareTo(amount) == 1) {
             balance = balance.subtract(amount);
-        } else{
-            balance = balance.ZERO;
-        }
     }
 
     public BigDecimal getBalance() {
